@@ -3,7 +3,7 @@
 # to the right versions, or leave them unset and get the RedHat 7.3 defaults
 
 DIE=0
-package=gst-plugin
+package=gst-opencv
 srcfile=src/main.c
 
 # autogen.sh helper functions (copied from GStreamer's common/ CVS module)
