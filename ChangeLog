@@ -1,4 +1,12 @@
-2009-04-06  Kapil Agrawal <kapil@mediamagictechnologies.com>
+2009-05-06  Mike Sheldon <mike@mikeasoft.com>
+
+	* src/edgedetect/gstedgedetect.c:
+	* src/pyramidsegment/gstpyramidsegemnt.c:
+	* src/facedetect/gstfacedetect.c: 
+	 
+	  Release OpenCV images when finalizing
+
+2009-05-06  Kapil Agrawal <kapil@mediamagictechnologies.com>
 
 	* configure.ac: Added an error check for opencv.
 	* src/edgedetect/gstedgedetect.h:
