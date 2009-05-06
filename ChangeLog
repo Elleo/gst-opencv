@@ -1,9 +1,12 @@
 2009-05-06  Mike Sheldon <mike@mikeasoft.com>
 
+	* src/facedetect/gstfacedetect.c:
+	  Fix "profile" parameter in face detect element to accept a string correctly 
+	  (was using char param instead of string param)
+
 	* src/edgedetect/gstedgedetect.c:
-	* src/pyramidsegment/gstpyramidsegemnt.c:
+	* src/pyramidsegment/gstpyramidsegment.c:
 	* src/facedetect/gstfacedetect.c: 
-	 
 	  Release OpenCV images when finalizing
 
 2009-05-06  Kapil Agrawal <kapil@mediamagictechnologies.com>
