@@ -93,7 +93,7 @@ AC_SUBST(OPENCV_CFLAGS)
 AC_SUBST(OPENCV_LIBS)
 
 if test "x$HAVE_OPENCV" = "xno"; then
-  AC_MSG_NOTICE(OpenCV libraries could not be found)
+  AC_MSG_ERROR(OpenCV libraries could not be found)
 fi
 
 dnl If we need them, we can also use the gstreamer-plugins-base libraries
