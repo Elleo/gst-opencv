@@ -1,3 +1,16 @@
+2009-05-08  Kapil Agrawal <kapil@mediamagictechnologies.com>
+
+	* configure.ac:
+	* src/Makefile.am:
+	* src/gstopencv.c:
+	* src/edgedetect/Makefile.am:
+	* src/edgedetect/gstedgedetect.c:
+	* src/facedetect/Makefile.am:
+	* src/facedetect/gstfacedetect.c:
+	* src/pyramidsegment/Makefile.am:
+	* src/pyramidsegment/gstpyramidsegment.c:
+	All elements will register as features of opencv plugin.
+
 2009-05-06  Mike Sheldon <mike@mikeasoft.com>
 
 	* src/facedetect/gstfacedetect.c:
