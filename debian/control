@@ -1,0 +1,13 @@
+Source: gst-opencv
+Section: unknown
+Priority: extra
+Maintainer: Noam Lewis <jones.noamle@gmail.com>
+Build-Depends: debhelper (>= 7), libcv-dev, libgstreamer-plugins-base0.10-dev, 
+Standards-Version: 3.8.0
+Homepage: https://launchpad.net/gst-opencv
+
+Package: gst-opencv
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libcv1, gstreamer0.10-plugins-base
+Description: Gstreamer plugins using opencv
+ A collection of Gstreamer plugins making computer vision techniques from OpenCV available to Gstreamer based applications.
