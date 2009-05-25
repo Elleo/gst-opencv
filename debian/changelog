@@ -1,5 +1,11 @@
-gst-opencv (0.5-1) jaunty; urgency=low
+gst-opencv (0.1+git20090525) jaunty; urgency=low
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Add face blurring element
+
+ -- Mike Sheldon <mike@mikeasoft.com>  Mon, 25 May 2009 11:34:39 +0100
+
+gst-opencv (0.1-1) jaunty; urgency=low
+
+  * Initial release
 
  -- Noam Lewis <jones.noamle@gmail.com>  Mon, 27 Apr 2009 23:26:11 +0300
