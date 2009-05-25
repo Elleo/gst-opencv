@@ -8,6 +8,18 @@
 	* src/faceblur/Makefile.am:
 	Add face blurring element
 
+	* debian/control:
+	* debian/changelog:
+	Fix dependencies and package section for debian package
+
+	* src/templatematch/gsttemplatematch.c:
+	Fix segfault when no template is loaded
+	Update example launch line to load a template
+
+	* examples/python/templatematch.py:
+	* examples/python/template.jpg:
+	Add example usage of the template matching element
+
 2009-05-13  Noam Lewis <jones.noamle@gmail.com>
 
 	* configure.ac:
