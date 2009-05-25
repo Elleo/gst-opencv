@@ -1,4 +1,10 @@
-gst-opencv (0.1+git20090525) jaunty; urgency=low
+gst-opencv (0.1+git20090525ubuntu2) jaunty; urgency=low
+
+  * Fix package section
+
+ -- Mike Sheldon <mike@mikeasoft.com>  Mon, 25 May 2009 12:04:33 +0100
+
+gst-opencv (0.1+git20090525ubuntu1) jaunty; urgency=low
 
   * Add face blurring element
 

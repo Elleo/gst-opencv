@@ -1,5 +1,5 @@
 Source: gst-opencv
-Section: unknown
+Section: libs
 Priority: extra
 Maintainer: Noam Lewis <jones.noamle@gmail.com>
 Build-Depends: debhelper (>= 7), libcv-dev, libgstreamer-plugins-base0.10-dev, 
