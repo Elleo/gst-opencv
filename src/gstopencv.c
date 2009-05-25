@@ -27,6 +27,7 @@
 #include "gstfaceblur.h"
 #include "gstfacedetect.h"
 #include "gstpyramidsegment.h"
+#include "gsttemplatematch.h"
 
 static gboolean
 plugin_init (GstPlugin * plugin)
@@ -44,6 +45,9 @@ plugin_init (GstPlugin * plugin)
   if (!gst_pyramidsegment_plugin_init (plugin))
     return FALSE;
 
+  if (!gst_templatematch_plugin_init (plugin))
+    return FALSE;
+      
   return TRUE;
 }
 
