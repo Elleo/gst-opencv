@@ -3,6 +3,19 @@
 	* AUTHORS: 
 	Add all current contributors to the authors list
 
+	* src/edgedetect/gstedgedetect.c:
+	* src/edgedetect/gstedgedetect.h:
+	* src/faceblur/gstfaceblur.c:
+	* src/faceblur/gstfaceblur.h:
+	* src/facedetect/gstfacedetect.c:
+	* src/facedetect/gstfacedetect.h:
+	* src/gstopencv.c:
+	* src/pyramidsegment/gstpyramidsegment.c:
+	* src/pyramidsegment/gstpyramidsegment.h:
+	* src/templatematch/gsttemplatematch.c:
+	* src/templatematch/gsttemplatematch.h:
+	Bring code in to line with general gstreamer standards
+
 2009-05-25  Mike Sheldon <mike@mikeasoft.com>
 
 	* configure.ac:
