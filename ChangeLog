@@ -1,3 +1,7 @@
+2009-12-18  Mike Sheldon <mike@mikeasoft.com>
+	* src/templatematch/gsttemplatematch.c:
+	Fix include statements to not include a hard-coded "opencv/" path
+
 2009-05-26  Mike Sheldon <mike@mikeasoft.com>
 
 	* AUTHORS: 
