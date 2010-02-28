@@ -1,4 +1,23 @@
+2010-02-28  Mike Sheldon <mike@mikeasoft.com>
+
+	* AUTHORS:
+	Update list of contributors
+
+	* src/faceblur/gstfaceblur.c:
+	* src/facedetect/gstfacedetect.c:
+	Fix leaks which were crashing gst-inspect (patch from Stefan Kost)
+
+2010-02-28  Sreerenj Balachandran <bsreerenj@gmail.com>
+
+	* src/textwrite/Makefile.am:
+	* src/textwrite/gsttextwrite.c:
+	* src/textwrite/gsttextwrite.h:
+	* src/gstopencv.c:
+	* src/Makefile.am:
+	Add a basic plugin to overlay text on to video streams
+
 2009-12-18  Mike Sheldon <mike@mikeasoft.com>
+
 	* src/templatematch/gsttemplatematch.c:
 	Fix include statements to not include a hard-coded "opencv/" path
 
