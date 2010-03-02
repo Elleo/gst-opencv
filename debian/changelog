@@ -1,3 +1,16 @@
+gst-opencv (0.1+git20100301ubuntu2) karmic; urgency=low
+
+  * Add libswscale-dev to build-deps and libswscale0 to deps
+
+ -- Mike Sheldon <mike@mikeasoft.com>  Mon, 01 Mar 2010 15:44:29 +0000
+
+gst-opencv (0.1+git20100301ubuntu1) karmic; urgency=low
+
+  * Add textwrite element
+  * Fix leaks in facedetect and faceblur
+
+ -- Mike Sheldon <mike@mikeasoft.com>  Mon, 01 Mar 2010 14:52:25 +0000
+
 gst-opencv (0.1+git20090525ubuntu5) jaunty; urgency=low
 
   * Add autotools, libtool and pkgconfig to package dependencies
