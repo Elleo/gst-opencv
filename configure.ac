@@ -96,6 +96,13 @@ if test "x$HAVE_OPENCV" = "xno"; then
   AC_MSG_ERROR(OpenCV libraries could not be found)
 fi
 
+PKG_CHECK_MODULES(SWSCALE,
+		  libswscale,
+		  HAVE_LIBSWSCALE=yes, HAVE_LIBSWSCALE=no)
+if test "x$HAVE_LIBSWSCALE" = "xno"; then
+  AC_MSG_ERROR(libswscale could not be found)
+fi
+
 dnl If we need them, we can also use the gstreamer-plugins-base libraries
 PKG_CHECK_MODULES(GSTPB_BASE,
                   gstreamer-plugins-base-$GST_MAJORMINOR >= $GSTPB_REQUIRED,
