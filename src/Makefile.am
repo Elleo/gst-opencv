@@ -5,11 +5,12 @@ SUBDIRS = edgedetect faceblur facedetect pyramidsegment templatematch textwrite
 plugin_LTLIBRARIES = libgstopencv.la
 
 # sources used to compile this plug-in
-libgstopencv_la_SOURCES = gstopencv.c
+libgstopencv_la_SOURCES = gstopencv.c gstopencvbasetrans.c
 
 # flags used to compile this facedetect
 # add other _CFLAGS and _LIBS as needed
-libgstopencv_la_CFLAGS = $(GST_CFLAGS) $(OPENCV_CFLAGS) \
+libgstopencv_la_CFLAGS = $(GST_CFLAGS) $(GST_BASE_CFLAGS) $(OPENCV_CFLAGS) \
+								 -I${top_srcdir}/src \
 								 -I${top_srcdir}/src/edgedetect \
 								 -I${top_srcdir}/src/faceblur \
 								 -I${top_srcdir}/src/facedetect \
@@ -17,8 +18,7 @@ libgstopencv_la_CFLAGS = $(GST_CFLAGS) $(OPENCV_CFLAGS) \
 								 -I${top_srcdir}/src/templatematch \
 								 -I${top_srcdir}/src/textwrite 
 
-libgstopencv_la_LIBADD = $(GST_LIBS) $(OPENCV_LIBS) \
-								 $(top_builddir)/src/edgedetect/libgstedgedetect.la \
+libgstopencv_la_LIBADD = $(GST_LIBS) $(GST_BASE_LIBS) $(OPENCV_LIBS) \
 								 $(top_builddir)/src/faceblur/libgstfaceblur.la \
 								 $(top_builddir)/src/facedetect/libgstfacedetect.la \
 								 $(top_builddir)/src/pyramidsegment/libgstpyramidsegment.la \
@@ -36,4 +36,4 @@ libgstopencv_la_DEPENDENCIES = \
 								 $(top_builddir)/src/textwrite/libgsttextwrite.la
 
 # headers we need but don't want installed
-noinst_HEADERS = 
+noinst_HEADERS = gstopencvbasetrans.h

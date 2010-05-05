@@ -161,5 +161,5 @@ dnl set proper LDFLAGS for plugins
 GST_PLUGIN_LDFLAGS='-module -avoid-version -export-symbols-regex [_]*\(gst_\|Gst\|GST_\).*'
 AC_SUBST(GST_PLUGIN_LDFLAGS)
 
-AC_OUTPUT(Makefile m4/Makefile src/Makefile src/edgedetect/Makefile src/faceblur/Makefile src/facedetect/Makefile src/pyramidsegment/Makefile src/templatematch/Makefile src/textwrite/Makefile)
+AC_OUTPUT(Makefile m4/Makefile src/Makefile src/basicfilters/Makefile src/edgedetect/Makefile src/faceblur/Makefile src/facedetect/Makefile src/pyramidsegment/Makefile src/templatematch/Makefile src/textwrite/Makefile)
 
