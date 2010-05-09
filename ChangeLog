@@ -1,3 +1,8 @@
+2010-05-10  Mike Sheldon <mike@mikeasoft.com>
+
+	* configure.ac:
+	Add configure check for highgui.h and cvaux.h
+
 2010-04-14  Mike Sheldon <mike@mikeasoft.com>
 
 	* configure.ac:

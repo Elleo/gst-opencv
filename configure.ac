@@ -129,6 +129,22 @@ if test "x$HAVE_GSTCTRL" = "xno"; then
   AC_MSG_NOTICE(no GStreamer Controller libraries found (gstreamer-controller-$GST_MAJORMINOR))
 fi
 
+AC_PROG_CXX
+AC_LANG_CPLUSPLUS
+OLD_CPPFLAGS=$CPPFLAGS
+CPPFLAGS=$OPENCV_CFLAGS
+AC_CHECK_HEADER(highgui.h, HAVE_HIGHGUI="yes", HAVE_HIGHGUI="no")
+if test "x$HAVE_HIGHGUI" = "xno"; then
+  AC_MSG_ERROR(highgui.h could not be found.)
+fi
+
+AC_CHECK_HEADER(cvaux.h, HAVE_CVAUX="yes", HAVE_CVAUX="no")
+if test "x$HAVE_CVAUX" = "xno"; then
+  AC_MSG_ERROR(cvaux.h could not be found.)
+fi
+CPPFLAGS=$OLD_CPPFLAGS
+AC_LANG_C
+
 dnl make _CFLAGS and _LIBS available
 AC_SUBST(GSTCTRL_CFLAGS)
 AC_SUBST(GSTCTRL_LIBS)
